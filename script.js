@@ -19,17 +19,17 @@ function convertFahrToCelsius(val){
      }
      else if( isNaN(number)){
        var value = JSON.stringify(val);
-     console.log(`${value} is not a valid number but a/an ${typeof(val)}.`);
-     return `${value} is not a valid number but a/an ${typeof(val)}.`
+     console.log(`'${value} is not a valid number but a/an ${typeof(val)}.'`);
+     return `'${value} is not a valid number but a/an ${typeof(val)}.'`
      }
    }
    else if(Array.isArray(val)){
-     console.log(`[${val}] is not a valid number but a/an array.`);
-     return `[${val}] is not a valid number but a/an array.`}
+     console.log(`'[${val}] is not a valid number but a/an array.'`);
+     return `'[${val}] is not a valid number but a/an array.'`}
    else{
      var value = JSON.stringify(val);
-     console.log(`${value} is not a valid number but a/an ${typeof(val)}.`);
-     return `${value} is not a valid number but a/an ${typeof(val)}.`;
+     console.log(`'${value} is not a valid number but a/an ${typeof(val)}.'`);
+     return `'${value} is not a valid number but a/an ${typeof(val)}.'`;
    }
  };
  // function calculate
@@ -37,18 +37,18 @@ function convertFahrToCelsius(val){
      //1F = 1.8C + 32 (e.g 0deg C = 32deg F)
   var  answer = ((n - 32) / 1.8);
   var answerDec = parseFloat( answer.toFixed(4));
-      console.log(`${answerDec}`);
+      console.log(`'${answerDec}'`);
       return `${answerDec}`
  }
  // testing
- // convertFahrToCelsius(37);
- // convertFahrToCelsius("");
- // convertFahrToCelsius("0");
- // convertFahrToCelsius([1,2,3,4]);
- // convertFahrToCelsius({obj:1 , name: "sarah"});
- // convertFahrToCelsius("bola");
- // convertFahrToCelsius();
- // convertFahrToCelsius(true);
+//  convertFahrToCelsius(37);
+//  convertFahrToCelsius("");
+//  convertFahrToCelsius("0");
+//  convertFahrToCelsius([1,2,3,4]);
+//  convertFahrToCelsius({obj:1 , name: "sarah"});
+//  convertFahrToCelsius("bola");
+//  convertFahrToCelsius([]);
+//  convertFahrToCelsius(true);
  
  
  /*
@@ -62,7 +62,7 @@ function convertFahrToCelsius(val){
  
    if(!Number(n)){
      var content = JSON.stringify(n);
-    console.log(`invalid parameter: ${content}`);
+     console.log(`invalid parameter: ${content}`);
      return  `invalid parameter: ${content}`;
    }
    else{
@@ -97,11 +97,11 @@ function convertFahrToCelsius(val){
  };
  //end of function checkyugioh
  
- // checkYuGiOh(29);
- // checkYuGiOh("29");
- // checkYuGiOh( '/');
- // checkYuGiOh("kenny");
- // checkYuGiOh([1,2,3,4]);
- // checkYuGiOh({name: "kenny", age: 26});
+//  checkYuGiOh(29);
+//  checkYuGiOh("29");
+//  checkYuGiOh( '/');
+//  checkYuGiOh("kenny");
+//  checkYuGiOh([1,2,3,4]);
+//  checkYuGiOh({name: "kenny", age: 26});
  
  
