@@ -62,7 +62,7 @@ function convertFahrToCelsius(val){
  
    if(!Number(n)){
      var content = JSON.stringify(n);
-     console.log(`invalid parameter: ${typeof(content)}`);
+    console.log(`invalid parameter: ${content}`);
      return  `invalid parameter: ${content}`;
    }
    else{
