@@ -7,3 +7,6 @@ Please this is my js file link
 https://github.com/Kehinded/zuri-algorithms-task/blob/5ddce884a5a819e84b32530cf017f70b745540b5/script.js
 
 Thanks
+
+Link to host page
+https://kehinded.github.io/zuri-algorithms-task/
