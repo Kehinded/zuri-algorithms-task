@@ -37,7 +37,7 @@ function convertFahrToCelsius(val){
      //1F = 1.8C + 32 (e.g 0deg C = 32deg F)
   var  answer = ((n - 32) / 1.8);
   var answerDec = parseFloat( answer.toFixed(4));
-      console.log(`'${answerDec}'`);
+      console.log(`${answerDec}`);
       return `${answerDec}`
  }
  // testing
