@@ -68,6 +68,11 @@ function convertFahrToCelsius(val){
    else{
      var arr = [];
      for(var i=1; i<= n; i++) {
+       if(typeof n === "boolean"){
+        var content = JSON.stringify(n);
+         console.log(`invalid parameter: "${content}"`);
+         return  `invalid parameter: "${content}"`;
+      }
      if(i % 2 === 0 && i % 3 === 0 && i % 5 === 0){
        arr.push("yu-gi-oh");
      }
